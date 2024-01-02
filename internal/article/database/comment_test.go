@@ -1,8 +1,8 @@
 package database
 
 import (
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/database"
+	"binanga/internal/article/model"
+	"binanga/internal/database"
 	"time"
 )
 

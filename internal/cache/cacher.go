@@ -1,10 +1,10 @@
 package cache
 
 import (
+	"binanga/internal/config"
 	"context"
 	"errors"
 	"fmt"
-	"gin-rest-api-example/internal/config"
 	"io"
 )
 

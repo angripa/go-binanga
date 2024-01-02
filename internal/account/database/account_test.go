@@ -1,9 +1,9 @@
 package database
 
 import (
-	"gin-rest-api-example/internal/account/model"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/pkg/logging"
+	"binanga/internal/account/model"
+	"binanga/internal/database"
+	"binanga/pkg/logging"
 	"testing"
 	"time"
 

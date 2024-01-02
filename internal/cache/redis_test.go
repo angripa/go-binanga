@@ -1,9 +1,9 @@
 package cache
 
 import (
+	"binanga/internal/config"
 	"context"
 	"fmt"
-	"gin-rest-api-example/internal/config"
 	"log"
 	"strings"
 	"testing"

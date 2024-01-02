@@ -1,13 +1,13 @@
 package database
 
 import (
+	"binanga/internal/article/model"
+	"binanga/internal/cache"
+	"binanga/internal/database"
+	"binanga/internal/metric"
+	"binanga/pkg/logging"
 	"context"
 	"fmt"
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/cache"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/internal/metric"
-	"gin-rest-api-example/pkg/logging"
 	"time"
 
 	"github.com/pkg/errors"
@@ -57,6 +57,7 @@ type ArticleDB interface {
 
 // NewArticleDB creates a new article db with given db
 func NewArticleDB(db *gorm.DB, cacher cache.Cacher, mp *metric.MetricsProvider) ArticleDB {
+
 	if cacher == nil {
 		return &articleDB{db: db}
 	}

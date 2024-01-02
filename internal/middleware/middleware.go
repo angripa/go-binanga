@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"binanga/pkg/logging"
+	"binanga/pkg/trace"
 	"context"
-	"gin-rest-api-example/pkg/logging"
-	"gin-rest-api-example/pkg/trace"
 	"net/http"
 	"time"
 

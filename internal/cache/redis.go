@@ -1,10 +1,10 @@
 package cache
 
 import (
+	"binanga/internal/config"
+	"binanga/pkg/logging"
 	"context"
 	"fmt"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/pkg/logging"
 	"strings"
 	"time"
 

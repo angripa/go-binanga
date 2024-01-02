@@ -17,7 +17,7 @@ var defaultConfig = map[string]interface{}{
 	"jwt.secret":      "secret-key",
 	"jwt.sessionTime": "864000s",
 
-	"db.dataSourceName":   "root:password@tcp(127.0.0.1:3306)/local_db?charset=utf8&parseTime=True&multiStatements=true",
+	"db.dataSourceName":   "root:P@ssw0rd@tcp(127.0.0.1:23306)/binanga?charset=utf8&parseTime=True&multiStatements=true",
 	"db.logLevel":         1,
 	"db.migrate.enable":   false,
 	"db.migrate.dir":      "",
@@ -38,6 +38,7 @@ var defaultConfig = map[string]interface{}{
 	"cache.redis.poolTimeout":  "1m",
 	"cache.redis.maxConnAge":   "0",
 	"cache.redis.idleTimeout":  "5m",
+	"cache.redis.db":           5,
 
 	"metrics.namespace": "article_server",
 	"metrics.subsystem": "",

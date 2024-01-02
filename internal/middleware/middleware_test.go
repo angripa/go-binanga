@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"gin-rest-api-example/pkg/trace"
+	"binanga/pkg/trace"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"net/http"

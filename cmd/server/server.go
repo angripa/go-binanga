@@ -1,19 +1,21 @@
 package main
 
 import (
+	"binanga/internal/account"
+	accountDB "binanga/internal/account/database"
+	"binanga/internal/article"
+	articleDB "binanga/internal/article/database"
+	"binanga/internal/cache"
+	"binanga/internal/config"
+	"binanga/internal/database"
+	"binanga/internal/merchant"
+	merchantDB "binanga/internal/merchant/database"
+	"binanga/internal/metric"
+	"binanga/internal/middleware"
+	"binanga/pkg/logging"
 	"context"
 	"encoding/json"
 	"fmt"
-	"gin-rest-api-example/internal/account"
-	accountDB "gin-rest-api-example/internal/account/database"
-	"gin-rest-api-example/internal/article"
-	articleDB "gin-rest-api-example/internal/article/database"
-	"gin-rest-api-example/internal/cache"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/internal/metric"
-	"gin-rest-api-example/internal/middleware"
-	"gin-rest-api-example/pkg/logging"
 	"log"
 	"net/http"
 	"time"
@@ -70,12 +72,16 @@ func runApplication() {
 			// setup article packages
 			articleDB.NewArticleDB,
 			article.NewHandler,
+			// setup merchant packages
+			merchantDB.NewMerchantDB,
+			merchant.NewHandler,
 			// server
 			newServer,
 		),
 		fx.Invoke(
 			account.RouteV1,
 			article.RouteV1,
+			merchant.RouteV1,
 			func(r *gin.Engine) {},
 		),
 	)

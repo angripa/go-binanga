@@ -1,11 +1,11 @@
 package database
 
 import (
+	"binanga/internal/article/model"
+	"binanga/internal/cache"
+	"binanga/internal/metric"
 	"context"
 	"fmt"
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/cache"
-	"gin-rest-api-example/internal/metric"
 )
 
 var _ ArticleDB = (*articleCacheDB)(nil)

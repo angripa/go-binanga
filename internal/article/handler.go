@@ -1,16 +1,16 @@
 package article
 
 import (
+	"binanga/internal/account"
+	articleDB "binanga/internal/article/database"
+	"binanga/internal/article/model"
+	"binanga/internal/config"
+	"binanga/internal/database"
+	"binanga/internal/middleware"
+	"binanga/internal/middleware/handler"
+	"binanga/pkg/logging"
+	"binanga/pkg/validate"
 	"context"
-	"gin-rest-api-example/internal/account"
-	articleDB "gin-rest-api-example/internal/article/database"
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/internal/middleware"
-	"gin-rest-api-example/internal/middleware/handler"
-	"gin-rest-api-example/pkg/logging"
-	"gin-rest-api-example/pkg/validate"
 	"net/http"
 	"strconv"
 

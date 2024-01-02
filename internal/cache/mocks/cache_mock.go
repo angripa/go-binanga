@@ -4,7 +4,7 @@ package mocks
 
 import (
 	context "context"
-	cache "gin-rest-api-example/internal/cache"
+	cache "binanga/internal/cache"
 
 	mock "github.com/stretchr/testify/mock"
 )

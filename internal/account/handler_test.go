@@ -1,13 +1,13 @@
 package account
 
 import (
+	"binanga/internal/account/database/mocks"
+	"binanga/internal/account/model"
+	"binanga/internal/config"
+	"binanga/internal/database"
+	"binanga/pkg/logging"
 	"bytes"
 	"encoding/json"
-	"gin-rest-api-example/internal/account/database/mocks"
-	"gin-rest-api-example/internal/account/model"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/pkg/logging"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"

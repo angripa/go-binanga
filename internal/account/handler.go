@@ -1,14 +1,14 @@
 package account
 
 import (
-	accountDB "gin-rest-api-example/internal/account/database"
-	"gin-rest-api-example/internal/account/model"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/internal/middleware"
-	"gin-rest-api-example/internal/middleware/handler"
-	"gin-rest-api-example/pkg/logging"
-	"gin-rest-api-example/pkg/validate"
+	accountDB "binanga/internal/account/database"
+	"binanga/internal/account/model"
+	"binanga/internal/config"
+	"binanga/internal/database"
+	"binanga/internal/middleware"
+	"binanga/internal/middleware/handler"
+	"binanga/pkg/logging"
+	"binanga/pkg/validate"
 	"net/http"
 
 	jwt "github.com/appleboy/gin-jwt/v2"

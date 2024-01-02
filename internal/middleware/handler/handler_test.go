@@ -1,8 +1,8 @@
 package handler
 
 import (
+	"binanga/internal/middleware"
 	"errors"
-	"gin-rest-api-example/internal/middleware"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"net/http"

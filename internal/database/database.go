@@ -1,8 +1,8 @@
 package database
 
 import (
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/pkg/logging"
+	"binanga/internal/config"
+	"binanga/pkg/logging"
 	"time"
 
 	"go.uber.org/zap/zapcore"

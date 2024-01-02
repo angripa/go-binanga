@@ -1,12 +1,12 @@
 package article
 
 import (
-	"gin-rest-api-example/internal/account"
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/internal/middleware/handler"
-	"gin-rest-api-example/pkg/logging"
-	"gin-rest-api-example/pkg/validate"
+	"binanga/internal/account"
+	"binanga/internal/article/model"
+	"binanga/internal/database"
+	"binanga/internal/middleware/handler"
+	"binanga/pkg/logging"
+	"binanga/pkg/validate"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"net/http"

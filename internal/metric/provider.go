@@ -1,7 +1,7 @@
 package metric
 
 import (
-	"gin-rest-api-example/internal/config"
+	"binanga/internal/config"
 	"strconv"
 	"time"
 

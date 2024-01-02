@@ -1,8 +1,8 @@
 package validate
 
 import (
+	"binanga/pkg/logging"
 	"fmt"
-	"gin-rest-api-example/pkg/logging"
 	"github.com/go-playground/validator/v10"
 	"reflect"
 )

@@ -1,7 +1,7 @@
 package model
 
 import (
-	accountModel "gin-rest-api-example/internal/account/model"
+	accountModel "binanga/internal/account/model"
 	"time"
 )
 

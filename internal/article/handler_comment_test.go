@@ -1,10 +1,10 @@
 package article
 
 import (
+	"binanga/internal/article/model"
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"gin-rest-api-example/internal/article/model"
 	"github.com/stretchr/testify/mock"
 	"github.com/tidwall/gjson"
 	"net/http"

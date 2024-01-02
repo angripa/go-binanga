@@ -1,11 +1,11 @@
 package database
 
 import (
+	"binanga/internal/account/model"
+	"binanga/internal/cache"
+	"binanga/internal/metric"
 	"context"
 	"fmt"
-	"gin-rest-api-example/internal/account/model"
-	"gin-rest-api-example/internal/cache"
-	"gin-rest-api-example/internal/metric"
 )
 
 var _ AccountDB = (*accountCachedDB)(nil)

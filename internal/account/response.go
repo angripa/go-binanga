@@ -1,6 +1,6 @@
 package account
 
-import "gin-rest-api-example/internal/account/model"
+import "binanga/internal/account/model"
 
 type UserResponse struct {
 	User User `json:"user"`

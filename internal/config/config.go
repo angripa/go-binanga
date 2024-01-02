@@ -72,6 +72,7 @@ type RedisConfig struct {
 	WriteTimeout time.Duration `json:"writeTimeout"`
 	DialTimeout  time.Duration `json:"dialTimeout"`
 	PoolSize     int           `json:"poolSize"`
+	DB           int           `json:"db"`
 	PoolTimeout  time.Duration `json:"poolTimeout"`
 	MaxConnAge   time.Duration `json:"maxConnAge"`
 	IdleTimeout  time.Duration `json:"idleTimeout"`

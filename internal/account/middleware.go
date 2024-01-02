@@ -1,11 +1,11 @@
 package account
 
 import (
-	accountDB "gin-rest-api-example/internal/account/database"
-	"gin-rest-api-example/internal/account/model"
-	"gin-rest-api-example/internal/cache"
-	"gin-rest-api-example/internal/config"
-	"gin-rest-api-example/pkg/logging"
+	accountDB "binanga/internal/account/database"
+	"binanga/internal/account/model"
+	"binanga/internal/cache"
+	"binanga/internal/config"
+	"binanga/pkg/logging"
 	"net/http"
 	"time"
 

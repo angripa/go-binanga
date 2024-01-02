@@ -1,7 +1,7 @@
 package article
 
 import (
-	"gin-rest-api-example/internal/article/model"
+	"binanga/internal/article/model"
 	"time"
 )
 

@@ -1,10 +1,10 @@
 package database
 
 import (
+	"binanga/internal/article/model"
+	"binanga/internal/database"
+	"binanga/pkg/logging"
 	"context"
-	"gin-rest-api-example/internal/article/model"
-	"gin-rest-api-example/internal/database"
-	"gin-rest-api-example/pkg/logging"
 	"gorm.io/gorm"
 )
 

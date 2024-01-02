@@ -1,10 +1,10 @@
 package database
 
 import (
+	"binanga/pkg/logging"
 	"context"
 	"errors"
 	"fmt"
-	"gin-rest-api-example/pkg/logging"
 	"time"
 
 	"go.uber.org/zap"

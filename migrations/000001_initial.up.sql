@@ -57,3 +57,17 @@ CREATE TABLE comments (
 )CHARACTER SET utf8mb4;
 CREATE index idx_comments_deleted_at ON comments(deleted_at);
 CREATE INDEX idx_comments_slug ON comments(slug);
+
+
+-- merchants
+CREATE TABLE merchants (
+    id         INT unsigned auto_increment PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at   DATETIME NULL,
+    updated_at   DATETIME NULL,
+    deleted_at_unix INT DEFAULT 0,
+    user_id INT UNSIGNED,
+    
+    CONSTRAINT merchants_user_id_fk FOREIGN KEY (user_id) REFERENCES accounts(id)
+) CHARACTER SET utf8mb4;
+CREATE INDEX idx_merchants_deleted_at_unix ON merchants(deleted_at_unix);

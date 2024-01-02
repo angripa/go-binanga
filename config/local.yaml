@@ -11,7 +11,7 @@ jwt:
   secret: secret-key
   sessionTime: 86400s
 db:
-  dataSourceName: root:password@tcp(db)/local_db?charset=utf8&parseTime=True&multiStatements=true
+  dataSourceName: root:P@ssw0rd@tcp(db)/binanga?charset=utf8&parseTime=True&multiStatements=true
   logLevel: 1
   migrate:
     enable: true
@@ -28,7 +28,7 @@ cache:
   redis:
     cluster: true
     endpoints:
-      - localhost:17000
+      - localhost:6379
     readTimeout: 3s
     writeTimeout: 3s
     dialTimeout: 5s
@@ -36,6 +36,7 @@ cache:
     poolTimeout: 1m
     maxConnAge: 0
     idleTimeout: 5m
+    db: 5
 metrics:
   namespace: article_server
   subsystem:
